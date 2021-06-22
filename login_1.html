@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Login 1</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__left"><a class="logo" href="/"><img src="./img/logo.svg" alt="logo"></a></div>
+        <div class="header__right">
+          <div class="header__right-button">
+            <button class="item" type="button"><i class="icon-like"></i></button>
+            <button class="item" type="button"><i class="icon-bell"></i></button>
+            <button class="item" type="button"><span>1</span><i class="icon-mail"></i></button>
+          </div>
+          <div class="header__right-user"><a class="first" href="#">Мои объявления</a>
+            <div class="user_panel">
+              <div class="user_panel__button"><i class="icon-profile-user"></i><span>Иван Иванов</span><i class="icon-arrow-bottom"></i></div>
+              <div class="user_panel__drop">
+                <div class="count"><span>4,44</span>
+                  <div class="count__list"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-default"></i></div><span>(3 отзыва)</span>
+                </div>
+                <ul>
+                  <li><a href="#">Мои объявления</a></li>
+                  <li><a href="#">Мои отзывы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                  <li><a href="#">Сообщения</a></li>
+                  <li><a href="#">Уведомления</a></li>
+                  <li><a href="#">Настройки</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div><a class="button_orange" href="#">ПОДАТЬ ОБЪЯВЛЕНИЕ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="page_main">
+        <div class="filter_form">
+          <div class="filter_form__fields">
+            <div class="custom-select first">
+              <select name="filter_1">
+                <option value="1">Все мероприятия</option>
+                <option value="2">Первый фильтр</option>
+                <option value="3">Второй фильтр</option>
+                <option value="4">Третий фильтр</option>
+                <option value="5">Четвертый фильтр</option>
+              </select>
+            </div>
+            <div class="custom-select last">
+              <select name="filter_2">
+                <option value="1">Анапа</option>
+                <option value="2">Анапа 2</option>
+                <option value="3">Анапа 3</option>
+                <option value="4">Анапа 4</option>
+                <option value="5">Анапа 5</option>
+              </select>
+            </div>
+            <div class="filter-input">
+              <input class="field" type="text" placeholder="Поиск">
+              <button class="button_orange" type="submit">Найти</button>
+            </div>
+          </div>
+          <div class="filter_form__checked">
+            <label class="field-checked">
+              <input type="checkbox" name="filter_check1">
+              <div class="check"></div><span>Только в названиях</span>
+            </label>
+            <label class="field-checked">
+              <input type="checkbox" name="filter_check1" checked>
+              <div class="check"></div><span>Только с фото</span>
+            </label>
+          </div>
+        </div>
+        <section class="main_page">
+          <div class="main_page__header">
+            <h1>Мероприятия в Анапе</h1><span>23 234</span>
+          </div>
+          <div class="main_page__wrap">
+            <aside class="main_page__aside">
+              <div class="title"><b>Мероприятия</b><i class="icon-arrow-field"></i></div>
+              <ul class="list">
+                <li><a href="#">Все мероприятия</a></li>
+                <li><a href="#">Первый фильтр</a></li>
+                <li><a href="#">Второй фильтр</a></li>
+                <li><a href="#">Третий фильтр</a></li>
+                <li><a href="#">Четвертый фильтр</a></li>
+              </ul>
+            </aside>
+            <div class="main_page__content">
+              <div class="map_control">
+                <div class="map_control__iframe">
+                  <div class="marker"></div>
+                  <div class="marker"></div>
+                  <div class="marker"></div>
+                  <div class="marker"></div>
+                  <div class="marker"></div><img src="./img/map.jpg" alt="image">
+                </div><a class="map_control__button" href="#">Показать все объявления на карте</a>
+              </div>
+              <div class="main_page__items"><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article2.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article3.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article4.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article2.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article3.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a><a class="item" href="#">
+                  <div class="item__image">
+                    <button class="item__image-folow" type="button"><i class="icon-like"></i></button><img src="./img/article4.jpg" alt="image">
+                  </div>
+                  <div class="item__text">
+                    <h3 class="title">Название мероприятия</h3>
+                    <p>Краткое описание в две-три строки.</p><b class="price">5 000 ₽</b>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; Eventom 2021</p><a href="#">Политика конфиденциальности </a>
+    </footer>
+    <div class="window_overlay active">
+      <div class="auth_wrap">
+        <button class="auth_wrap-close" type="button"><i class="icon-close"></i></button>
+        <div class="auth_wrap-title">
+          <h3>Вход</h3>
+        </div>
+        <div class="auth_wrap-form">
+          <div class="auth_wrap-content">
+            <div class="field-set">
+              <input class="field field-error" type="text" placeholder="Телефон или E-mail"><span class="message-error">Неправильный телефон или E-mail</span>
+            </div>
+            <div class="field-set field-last">
+              <input class="field" type="password" placeholder="Пароль">
+            </div>
+            <div class="field-set field-between">
+              <label class="field_radio">
+                <input type="radio" name="auth_cookie"><span class="check"></span>
+                <p>Запомнить пароль</p>
+              </label><a href="#">Забыли пароль?</a>
+            </div>
+            <button class="button_orange" type="submit">ВХОД</button>
+            <div class="auth_wrap-form__order"><span>Или продолжить через</span>
+              <div class="auth_wrap-form__social"><a class="social_vk" href="#"><img src="./img/vk.svg" alt="image"></a><a class="social_ok" href="#"><img src="./img/odnoklassniki.svg" alt="image"></a><a class="social_icloud" href="#"><img src="./img/icloud.svg" alt="image"></a><a class="social_facebook" href="#"><img src="./img/facebook.svg" alt="image"></a><a class="social_google" href="#"><img src="./img/google-plus.svg" alt="image"></a></div>
+            </div>
+          </div>
+          <div class="auth_wrap-form__bottom"><a class="link" href="#">Зарегистрироваться</a>
+            <p>При входе вы подтверждаете согласие с нашей <a href="#">Политикой конфиденциальности</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./js/common.js" defer></script>
+  </body>
+</html>
