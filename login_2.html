@@ -10,7 +10,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__left"><a class="logo" href="/"><img src="./img/logo.svg" alt="logo"></a></div>
+        <div class="header__left">
+          <button class="burger" type="button"><span></span></button><a class="logo" href="/"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
         <div class="header__right">
           <div class="header__right-button">
             <button class="item" type="button"><i class="icon-like"></i></button>
@@ -40,9 +42,19 @@
       </div>
     </header>
     <div class="container">
-      <div class="page_main">
+      <div class="wrap_main">
         <div class="filter_form">
           <div class="filter_form__fields">
+            <div class="filter_form__smart smart-filter">
+              <div class="title"><b>Мероприятия</b><i class="icon-arrow-field"></i></div>
+              <ul class="list">
+                <li><a href="#">Все мероприятия</a></li>
+                <li><a href="#">Первый фильтр</a></li>
+                <li><a href="#">Второй фильтр</a></li>
+                <li><a href="#">Третий фильтр</a></li>
+                <li><a href="#">Четвертый фильтр</a></li>
+              </ul>
+            </div>
             <div class="custom-select first">
               <select name="filter_1">
                 <option value="1">Все мероприятия</option>
@@ -52,7 +64,8 @@
                 <option value="5">Четвертый фильтр</option>
               </select>
             </div>
-            <div class="custom-select last">
+            <div class="custom-select last smart-filter">
+              <label>Город или регион</label>
               <select name="filter_2">
                 <option value="1">Анапа</option>
                 <option value="2">Анапа 2</option>
@@ -64,9 +77,10 @@
             <div class="filter-input">
               <input class="field" type="text" placeholder="Поиск">
               <button class="button_orange" type="submit">Найти</button>
+              <button class="filter_setting_active" type="button"><i class="icon-settings"></i></button>
             </div>
           </div>
-          <div class="filter_form__checked">
+          <div class="filter_form__checked smart-filter">
             <label class="field-checked">
               <input type="checkbox" name="filter_check1">
               <div class="check"></div><span>Только в названиях</span>
@@ -165,11 +179,13 @@
       </div>
     </div>
     <footer class="footer">
-      <p>&copy; Eventom 2021</p><a href="#">Политика конфиденциальности </a>
+      <div class="container">
+        <p>&copy; Eventom 2021</p><a href="#">Политика конфиденциальности </a>
+      </div>
     </footer>
     <div class="window_overlay active">
       <div class="auth_wrap">
-        <button class="auth_wrap-close" type="button"><i class="icon-close"></i></button>
+        <button class="window-close" type="button"><i class="icon-close"></i></button>
         <div class="auth_wrap-title">
           <h3>Регистрация</h3>
         </div>
@@ -183,7 +199,33 @@
         </div>
       </div>
     </div>
+    <div class="profile_mobile">
+      <div class="container">
+        <div class="profile_mobile__header"><img src="./img/avatar2.jpg" alt="image">
+          <div class="text">
+            <h3>Иван Иванов</h3>
+            <div class="count"><span>4,44</span>
+              <div class="count__list"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-default"></i></div><span>(3 отзыва)</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile_mobile__button"><a class="button_orange" href="#">ПОДАТЬ ОБЪЯВЛЕНИЕ</a></div>
+        <div class="profile_mobile__nav">
+          <ul>
+            <li><a href="#">Мои объявления</a></li>
+            <li><a href="#">Мои отзывы</a></li>
+            <li><a href="#">Избранное</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Уведомления</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/imask/imask.js" defer></script>
+    <script src="./libs/simplebar/simplebar.min.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>
 </html>

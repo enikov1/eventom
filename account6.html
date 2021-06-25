@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Map</title>
+    <title>Account 6</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
   </head>
@@ -42,77 +42,68 @@
       </div>
     </header>
     <div class="container">
-      <div class="wrap_main">
-        <div class="filter_form">
-          <div class="filter_form__fields">
-            <div class="filter_form__smart smart-filter">
-              <div class="title"><b>Мероприятия</b><i class="icon-arrow-field"></i></div>
-              <ul class="list">
-                <li><a href="#">Все мероприятия</a></li>
-                <li><a href="#">Первый фильтр</a></li>
-                <li><a href="#">Второй фильтр</a></li>
-                <li><a href="#">Третий фильтр</a></li>
-                <li><a href="#">Четвертый фильтр</a></li>
-              </ul>
+      <div class="wrap_user">
+        <section class="user_page">
+          <aside class="user_page__aside user_page__smart_hide">
+            <div class="user_card">
+              <div class="user_card__image"><img src="./img/avatar2.jpg" alt="image"><a class="user_card__photo_edit" href="#"><i class="icon-camera"> </i></a></div>
+              <div class="user_card__title">
+                <h2>Иван Иванов</h2>
+              </div>
+              <div class="user_card__count"><span>4,44</span>
+                <div class="user_card__count-list"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-default"></i></div><span>(3 отзыва)</span>
+              </div>
+              <div class="user_card__nav">
+                <ul>
+                  <li><a href="#">Мои объявления</a></li>
+                  <li><a href="#">Мои отзывы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                  <li><a class="active" href="#">Сообщения</a></li>
+                  <li><a href="#">Уведомления</a></li>
+                  <li><a href="#">Настройки</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="custom-select first">
-              <select name="filter_1">
-                <option value="1">Все мероприятия</option>
-                <option value="2">Первый фильтр</option>
-                <option value="3">Второй фильтр</option>
-                <option value="4">Третий фильтр</option>
-                <option value="5">Четвертый фильтр</option>
-              </select>
-            </div>
-            <div class="custom-select last smart-filter">
-              <label>Город или регион</label>
-              <select name="filter_2">
-                <option value="1">Анапа</option>
-                <option value="2">Анапа 2</option>
-                <option value="3">Анапа 3</option>
-                <option value="4">Анапа 4</option>
-                <option value="5">Анапа 5</option>
-              </select>
-            </div>
-            <div class="filter-input">
-              <input class="field" type="text" placeholder="Поиск">
-              <button class="button_orange" type="submit">Найти</button>
-              <button class="filter_setting_active" type="button"><i class="icon-settings"></i></button>
-            </div>
-          </div>
-          <div class="filter_form__checked smart-filter">
-            <label class="field-checked">
-              <input type="checkbox" name="filter_check1">
-              <div class="check"></div><span>Только в названиях</span>
-            </label>
-            <label class="field-checked">
-              <input type="checkbox" name="filter_check1" checked>
-              <div class="check"></div><span>Только с фото</span>
-            </label>
-          </div>
-        </div>
-        <section class="main_page">
-          <div class="main_page__header">
-            <h1>Мероприятия в Анапе</h1><span>23 234</span>
-            <div class="back"><a class="back__link" href="#"> <i class="icon-arrow2-stroke"></i>Все мероприятия</a></div>
-          </div>
-          <div class="main_page__map smart__map">
-            <div class="map_control">
-              <div class="map_control__iframe">
-                <div class="marker"></div>
-                <div class="locale"><i class="icon-locale"></i></div>
-                <div class="marker"></div>
-                <div class="marker"></div>
-                <div class="marker"></div>
-                <div class="marker"></div>
-                <div class="marker"></div>
-                <div class="marker"></div><a class="locale__item" href="#">
-                  <button class="locale__item-folow" type="button"><i class="icon-like"></i></button>
-                  <div class="locale__item-image"><img src="./img/article_mini.jpg" alt="image"></div>
-                  <div class="locale__item-text">
-                    <h3 class="title">Название мероприятия</h3>
-                    <p>Краткое описание в две-три строки. </p><b class="price">5 000 ₽</b>
-                  </div></a><img src="./img/map_full.jpg" alt="image">
+          </aside>
+          <div class="user_page__content">
+            <div class="message_main">
+              <div class="message_main__header"><a class="link_back" href="#"><i class="icon-arrow-stroke"></i></a>
+                <div class="user">
+                  <div class="user__image"><img src="./img/avatar.jpg" alt="image"></div>
+                  <div class="user__text"><b class="title">Андрей</b>
+                    <p>Название мероприятия</p>
+                  </div>
+                </div>
+                <button class="user__control" type="button"><i class="icon-b-open"></i>
+                  <ul>
+                    <li><a href="#">Перейти в профиль</a></li>
+                    <li><a href="#">Удалить чат</a></li>
+                  </ul>
+                </button>
+              </div>
+              <div class="message_main__canvas" data-simplebar>
+                <div class="item item_left">
+                  <p>Lorem ipsum dolor sit amet, consectet</p><span>15:45</span>
+                </div>
+                <div class="item item_right">
+                  <p>Lorem ipsum dolor sit amet, consectet</p><span>15:45</span>
+                </div>
+              </div>
+              <div class="message_main__add">
+                <div class="field-set">
+                  <textarea class="field _js_textarea" name="message" placeholder="Написать сообщение"></textarea>
+                  <div class="field-set__control">
+                    <label class="item">
+                      <input type="file" name="file"><i class="icon-paper-clip"></i>
+                    </label>
+                    <label class="item">
+                      <input type="file" name="image"><i class="icon-camera"></i>
+                    </label>
+                    <label class="item">
+                      <button type="submit"><i class="icon-send"></i></button>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

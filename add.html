@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Add</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__left">
+          <button class="burger" type="button"><span></span></button><a class="logo" href="/"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__right">
+          <div class="header__right-button">
+            <button class="item" type="button"><i class="icon-like"></i></button>
+            <button class="item" type="button"><i class="icon-bell"></i></button>
+            <button class="item" type="button"><span>1</span><i class="icon-mail"></i></button>
+          </div>
+          <div class="header__right-user"><a class="first" href="#">Мои объявления</a>
+            <div class="user_panel">
+              <div class="user_panel__button"><i class="icon-profile-user"></i><span>Иван Иванов</span><i class="icon-arrow-bottom"></i></div>
+              <div class="user_panel__drop">
+                <div class="count"><span>4,44</span>
+                  <div class="count__list"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-default"></i></div><span>(3 отзыва)</span>
+                </div>
+                <ul>
+                  <li><a href="#">Мои объявления</a></li>
+                  <li><a href="#">Мои отзывы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                  <li><a href="#">Сообщения</a></li>
+                  <li><a href="#">Уведомления</a></li>
+                  <li><a href="#">Настройки</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div><a class="button_orange" href="#">ПОДАТЬ ОБЪЯВЛЕНИЕ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrap_user">
+        <div class="form_add">
+          <div class="w-9/12">
+            <div class="form_add__title">
+              <h1>Подать объявление</h1>
+            </div>
+            <div class="form_add__wrap">
+              <div class="field-set">
+                <label for="category">Выберите категорию</label>
+                <div class="custom-select">
+                  <select class="field" name="category" id="category">
+                    <option value="1" selected>Категория</option>
+                    <option value="2">Категория 2</option>
+                    <option value="3">Категория 3</option>
+                    <option value="4">Категория 4</option>
+                    <option value="5">Категория 5</option>
+                    <option value="6">Категория 6</option>
+                    <option value="7">Категория 7</option>
+                    <option value="8">Категория 8</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-set">
+                <label for="title">Название объявления</label>
+                <input class="field" type="text" id="title" name="title" placeholder="Введите название">
+              </div>
+              <div class="field-set">
+                <label for="descr">Описание объявления</label>
+                <textarea class="field" name="descr" id="descr" placeholder="Описание обхявления"></textarea>
+              </div>
+              <div class="field-set">
+                <label for="video_link">Ссылка на YouTube</label>
+                <input class="field" type="text" id="video_link" name="video_link" placeholder="hhtps://">
+              </div>
+              <div class="field-set w-50">
+                <label for="price">Стоимость услуги</label>
+                <div class="field-price">
+                  <input class="field _js_mask_price" type="text" id="price" name="price" placeholder=""><span class="price">₽</span>
+                </div>
+                <div class="field-set__checked">
+                  <label class="field-checked">
+                    <input type="radio" name="price_mod" checked><span class="check"></span>
+                    <p>Бесплатно</p>
+                  </label>
+                  <label class="field-checked">
+                    <input type="radio" name="price_mod"><span class="check"></span>
+                    <p>Donation</p><span class="message"><i class="icon-question"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="field-set flex flex-wrap">
+                <div class="image_items">
+                  <div class="item"><img src="./img/article3.jpg" alt="image">
+                    <button class="item__delete" type="button"><i class="icon-trash"></i></button>
+                  </div>
+                </div>
+                <label class="field-upload">
+                  <input type="file" name="image"><i class="icon-camera"></i>
+                </label>
+              </div>
+              <div class="field-set">
+                <label for="locale">Место оказания услуг</label>
+                <input class="field" type="text" id="locale" name="locale" placeholder="Введите название">
+                <div class="field-set__map">
+                  <div class="iframe">
+                    <div class="marker"><i class="icon-locale"></i></div><img src="./img/map_add.jpg" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="field-set w-50">
+                <label>Срок  действия мероприятия</label>
+                <div class="field-set__group">
+                  <input class="field _js_mask_date" type="text" placeholder="">
+                  <input class="field _js_mask_dateto" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="field-set w-50">
+                <label for="phone">Телефон</label>
+                <input class="field _js_mask_phone" type="text" id="phone" placeholder="Телефон">
+              </div>
+              <div class="field-button">
+                <button class="button_orange" type="submit">РАЗМЕСТИТЬ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; Eventom 2021</p><a href="#">Политика конфиденциальности </a>
+      </div>
+    </footer>
+    <div class="profile_mobile">
+      <div class="container">
+        <div class="profile_mobile__header"><img src="./img/avatar2.jpg" alt="image">
+          <div class="text">
+            <h3>Иван Иванов</h3>
+            <div class="count"><span>4,44</span>
+              <div class="count__list"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-default"></i></div><span>(3 отзыва)</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile_mobile__button"><a class="button_orange" href="#">ПОДАТЬ ОБЪЯВЛЕНИЕ</a></div>
+        <div class="profile_mobile__nav">
+          <ul>
+            <li><a href="#">Мои объявления</a></li>
+            <li><a href="#">Мои отзывы</a></li>
+            <li><a href="#">Избранное</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Уведомления</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/imask/imask.js" defer></script>
+    <script src="./libs/simplebar/simplebar.min.js" defer></script>
+    <script src="./js/common.js" defer></script>
+  </body>
+</html>
