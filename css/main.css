@@ -2810,7 +2810,7 @@ textarea.field {
   .form_add__wrap .field-set__checked .field-checked:last-child {
     margin-right: 0;
   }
-  .form_add__wrap .field-set__checked .field-checked p {
+  .form_add__wrap .field-set__checked .field-checked .text {
     font-size: 1rem;
   }
 }
