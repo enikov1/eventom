@@ -70,6 +70,20 @@ document.addEventListener("click", closeAllSelect);
 
 'use strict';
 
+const user_control = document.querySelectorAll('.item_stroke__control');
+
+if(user_control) {
+	user_control.forEach(e => {
+
+		let control_smart_wrap = e.querySelector('.control__smart_wrap');
+
+		e.querySelector('.control__smart').addEventListener('click', function() {
+			control_smart_wrap.classList.toggle('active');
+		});
+	});
+}
+
+
 const button_user_panel = document.querySelector('.user_panel__button'),
 	  drop_user_panel = document.querySelector('.user_panel__drop');
 
